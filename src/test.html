@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+  />
+  <meta charset="UTF-8">
+  <title>测试</title>
+</head>
+<body>
+<style id="demo2"></style>
+ <div id="demo"></div>
+<div id="buttons">
+  <button id="btnPause">暂停</button>
+  <button id="btnPlay">播放</button>
+  <button id="btnSlow">低速</button>
+  <button id="btnMiddle">中速</button>
+  <button id="btnFast">高速</button>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  #buttons{
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  button{
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 14px ;
+    line-height: 20px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #da4f49 ;
+    border: 1px solid #bd362f;
+  }
+  #demo2{
+    display: none;
+  }
+  #demo{
+    position: fixed;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-y:auto;
+  }
+  #demo::-webkit-scrollbar{/* 这是单纯的隐藏滚动条，滚动条还在，用户可以通过滚轮滚动 */
+    display: none;
+  }
+  #html{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+  }
+</style>
+ <div id="html">
+   <div class="skin">
+     <div class="eye left"></div>
+     <div class="eye right"></div>
+     <div class="nose">
+       <div class="yuan"></div>
+     </div>
+     <div class="face left">
+
+     </div>
+     <div class="face right">
+
+     </div>
+     <div class="mouth">
+       <div class="up">
+         <div class="lip left"></div>
+         <div class="lip right"></div>
+       </div>
+       <div class="down">
+         <div class="yuan1">
+           <div class="yuan2"></div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<script src="test.js"></script>
+</body>
+</html>
